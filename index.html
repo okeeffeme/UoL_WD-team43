@@ -1,36 +1,39 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-GB">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="utf-8">
+        <meta name="description" content="The offical website for the Webquest 43 Park">
+        <meta name="keywords" content="Themepark, Roller coasters, Adventure park, Waterpark">
+        <meta name="author" content="Team 43, Laura Blanco, Tejinder Singh
+, M. O'Keeffe, Xose Mendez">  
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
         <title>Webquest 43 Park</title>
     </head>
-</html>
-<search>
-    <form action="./search/">
-      <label for="mainSearch">Search the site</label>
-      <input type="search" id="mainSearch"/>
-      <button type="submit">Search</button>
-    </form>
-</search>
  <header>
    <svg width="100px" height="100px" viewBox="0 0 24 24" id="logo" aria-describedBy="logoDesc">
      <rect width="24" height="24" rx="24" fill="orange"/>
      <rect id="primary" x="9" y="2" width="6" height="12" rx="2" fill="white"></rect><circle id="secondary" cx="12" cy="19" r="3" fill="cyan"></circle>
      <desc id="logoDesc">The Team 43 SplashPark logo</desc>
    </svg>
-   <section id='navigationLinks'>
-     <h1>Webquest 43 Park</h1>
+   <nav id='navigationLinks'>
      <a href='#'>Plan Your Visit</a>
      <a href='#'>Buy Tickets</a>
-     <button type='button'>
-       Search
-     </button>
-     <button type='button'>
-       Login
-     </button>
-   </section>
+   </nav>
+   <div id="headerSearchLogin">
+    
+    <button type="button">Login</button>
+   </div>
+   <search>
+    <form action="./search/">
+      <label for="mainSearch">Search the site</label>
+      <input type="search" id="mainSearch">
+      <button type="submit">Search</button>
+    </form>
+</search> 
 </header>
 <section id="banner">
-  <img src="" />
+    <h1>Welcome to Webquest 43!</h1>
+  <img src="./img/banner-istrfry-marcus-unsplash.jpg" height="300px" alt="Welcome banner showing visitors to Webquest 43 Park">
 </section>
 <main>
   <section id="buyTickets">
@@ -54,9 +57,9 @@
     </p>
     <form action="javascript:void(0);">
       <label for="newsletterName">Your Name</label>
-      <input type="text" id="newsletterName"/>
+      <input type="text" id="newsletterName">
       <label for="newsletterEmail">Your Email</label>
-      <input type="email" id="newsletterEmail"/>
+      <input type="email" id="newsletterEmail">
       <button type="submit">Sign up!</button>
     </form>
   </section>
@@ -73,3 +76,4 @@
     <a href='#'>Terms of Service</a>
   </div>
 </footer>
+</html>
