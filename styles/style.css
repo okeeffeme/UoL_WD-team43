@@ -79,3 +79,27 @@ search {
     white-space: nowrap;
     margin-right: .2rem;
 }
+
+#banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/banner-istrfry-marcus-unsplash.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 300px;
+}
+
+#banner h1 {
+    color: white;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 30vw;
+    background-color: green;
+    border-radius: 20px;
+}
