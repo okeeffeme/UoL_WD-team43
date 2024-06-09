@@ -103,3 +103,11 @@ search {
     background-color: green;
     border-radius: 20px;
 }
+
+#newsletterSignup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
