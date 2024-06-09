@@ -93,6 +93,13 @@ search {
     color: white;
 }
 
+#promos {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -115,7 +122,7 @@ search {
 footer {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: flex-end;
     justify-content: space-evenly;
     height: 200px;
     background: red;
