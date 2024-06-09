@@ -111,3 +111,12 @@ search {
     justify-content: center;
     height: 300px;
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-evenly;
+    height: 200px;
+    background: red;
+}
