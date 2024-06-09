@@ -1,8 +1,20 @@
+:root {
+    --c-highcontrast: #011114;
+    --c-highcontrast-1: #001c21;
+    --c-lowcontrast: #F7F7F7;
+    --c-lowcontrast-1: #EFEFEF;
+    --c-palette-1: #AC060F;
+    --c-palette-2: #f78317;
+    --c-palette-3: #237F90;
+    --filet: 10px;
+}
+
 /* https://fonts.google.com */
 * {
     font-family: "Inter Tight", Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    color: var(--c-highcontrast);
 }
 
 /* https://gomakethings.com/hidden-content-for-better-a11y/#hiding-the-link */
@@ -18,12 +30,27 @@
     width: 1px;
 }
 
+button {
+    /* background: var(--c-palette-3); */
+    color: var(--c-highcontrast-1);
+    font-weight: 800;
+    border-radius: var(--filet);
+    border: 1.4px solid var(--c-highcontrast-1);
+    padding: 2px 10px;
+}
+
+input {
+    background: var(--c-lowcontrast-1);
+    border-radius: var(--filet);
+    border: 1.4px solid var(--c-highcontrast-1);
+    padding: 2px 10px;
+}
+
 .header {
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background: grey;
 }
 
 .logo {
@@ -82,15 +109,21 @@ search {
 
 #banner {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url(../img/banner-istrfry-marcus-unsplash.jpg) no-repeat center center fixed;
+    background: url(../img/stephen-hateley-unsplash-op.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 300px;
+    color: white;
+    text-shadow: var(--c-lowcontrast-1) 1px 1px;
 }
 
-#banner h1 {
-    color: white;
+span.whiteBg {
+    background-color: var(--c-lowcontrast);
+    padding: 20px 40px;
+    border-radius: var(--filet);
+    text-align: center;
 }
 
 .textBanner {
@@ -108,8 +141,11 @@ search {
     justify-content: center;
     grid-gap: 5px 20px;
     padding: 20px 10px;
+    background: url(../img/stephen-hateley-unsplash-op.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 
+/* https://chrisruppel.com/blog/css-animation-border-radius/ */
 .card {
     display: flex;
     flex-direction: column;
@@ -117,9 +153,21 @@ search {
     justify-content: center;
     height: 300px;
     width: 30vw;
-    background: green;
-    border-radius: 20px;
+    border-radius: var(--filet);
 }
+
+.card:hover{
+    animation: wobble 2s ease-in-out alternate infinite;
+}
+
+@keyframes wobble {
+    50% {
+      transform: rotate(.01turn); 
+    }
+    100% {
+        transform: rotate(-.01turn); 
+    }
+  }
 
 @media only screen and (max-width: 680px) {
     #promos {
@@ -127,7 +175,6 @@ search {
         justify-content: normal;
     }
     .card {
-        background: lightsalmon;
         height: auto;
         width: 100%;
     }
@@ -140,7 +187,7 @@ search {
     justify-content: center;
     height: 300px;
     padding: 20px 10px;
-    background: lightblue;
+    background: var(--c-main);
 }
 
 footer {
@@ -149,7 +196,7 @@ footer {
     align-items: flex-end;
     justify-content: space-between;
     height: 200px;
-    background: red;
+    background: var(--c-lowcontrast-1);
     padding: 20px 10px;
 }
 
@@ -164,7 +211,6 @@ address {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background: white;
 }
 
 .footerLinks:first-of-type {
