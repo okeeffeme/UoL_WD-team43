@@ -8,7 +8,7 @@
     <meta name="author" content="Team 43, Laura Blanco, Tejinder Singh
 , M. O'Keeffe, Xose Mendez">
     <meta name="viewport" content="width=device-width, inital-scale=1.0">
-    <title>Webquest 43 Park</title>
+    <title>Webquest 43 Park | Plan Your Visit</title>
     <!-- Code from fonts.google.com -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,45 +21,74 @@
 <!-- Code from MOK -->
 <header class='header'>
     <div class='logo'>
-      <svg width="60px" height="60px" viewBox="0 0 24 24" id="logo" aria-describedBy="logoDesc">
-        <rect width="24" height="24" rx="24" fill="white" />
-        <rect id="primary" x="9" y="2" width="6" height="12" rx="2" fill="cyan"></rect>
-        <circle id="secondary" cx="12" cy="19" r="3" fill="cyan"></circle>
-        <desc id="logoDesc">The Team 43 WebPark logo</desc>
-      </svg>
-      <h1> Webpark 43</h1>
+        <svg width="60px" height="60px" viewBox="0 0 24 24" id="logo" aria-describedBy="logoDesc">
+            <rect width="24" height="24" rx="24" fill="white" />
+            <rect id="primary" x="9" y="2" width="6" height="12" rx="2" fill="cyan"></rect>
+            <circle id="secondary" cx="12" cy="19" r="3" fill="cyan"></circle>
+            <desc id="logoDesc">The Team 43 WebPark logo</desc>
+        </svg>
+        <h1> Webpark 43</h1>
     </div>
     <div class='headerLinks'>
-      <nav id='navigationLinks'>
-        <a href='./visit.html'>Plan Your Visit</a>
-        <a href='./tickets.html'>Buy Tickets</a>
-      </nav>
-      <!-- There is an error with the HTML validator that results in the search element not being a 'valid' child of the header element. While this is an error with the validator, we will remove this element for now. -->
-      <!-- <search> -->
+        <nav id='navigationLinks'>
+            <a href='./visit.html'>Plan Your Visit</a>
+            <a href='./tickets.html'>Buy Tickets</a>
+        </nav>
+        <!-- There is an error with the HTML validator that results in the search element not being a 'valid' child of the header element. While this is an error with the validator, we will remove this element for now. -->
+        <!-- <search> -->
         <form action="./search/">
-          <label for="mainSearch" class='screen-reader'>Search the site</label>
-          <input type="search" id="mainSearch" placeholder='Looking for something?'>
-          <button type="submit">&#x1F50E;&#xFE0E;</button>
+            <label for="mainSearch" class='screen-reader'>Search the site</label>
+            <input type="search" id="mainSearch" placeholder='Looking for something?'>
+            <button type="submit">&#x1F50E;&#xFE0E;</button>
         </form>
-      <!-- </search> -->
-      <button type="button" class='login'>Login</button>
+        <!-- </search> -->
+        <button type="button" class='login'>Login</button>
     </div>
-  </header>
- <!-- End code from MOK -->
+</header>
+<!-- End code from MOK -->
+<!-- Code from Tej, MOK adding some screenreader support -->
+<nav aria-label="Breadcrumb" class="breadcrumbs">
+    <ol>
+        <li>
+            <a href="./index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6" aria-describedBy="homeDesc">
+                    <path
+                        d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                    <path
+                        d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+                        <desc id="homeDesc">Navigate Home</desc>
+                </svg>
+            </a>
+        </li>
+        <li class="arrow" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                    d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                    clip-rule="evenodd" />
+            </svg>
+        </li>
+        <li>
+            <a href="./visit.html">Plan your trip</a>
+        </li>
+        <li class="arrow" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                    d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                    clip-rule="evenodd" />
+            </svg>
+        </li>
+        <li>
+            <a href="./attractions.html">Attractions</a>
+        </li>
+    </ol>
+</nav>
+<!-- End code from Tej -->
 <!-- Code from Xose Mendez, MOK adding semantic tags -->
 <div class="season">
     <div class="card">
         <h2 class="card-title">Summer Season 2024</h2>
         <p>June 10th - September 22nd</p>
     </div>
-</div>
-<!-- End code from Xose Mendez -->
-<!-- Code from Xose Mendez, MOK adding semantic tags -->
-<div class="opening-hours">
-    <h2>Opening Hours</h2>
-    <p>Tuesday thru Thursday <time datetime="09:00">9AM</time> to <time datetime="21:00">9PM</time></p>
-    <p>Friday, Saturday, Sunday <time datetime="09:00">9AM</time> to <time datetime="00:00">12PM</time></p>
-    <p>Closed Monday</p>
 </div>
 <!-- End code from Xose Mendez -->
 <!-- Code from Xose Mendez, MOK adding semantic tags -->
@@ -121,7 +150,7 @@
                 <a href='mailto:email@email.com'>email@email.com</a>
                 <a href="tel:+0000000000">+00 000 00 000</a>
             </address>
-        </div>  
+        </div>
         <div class="footerColumn">
             <h3>Social Media</h3>
             <ul class="footerLinks">

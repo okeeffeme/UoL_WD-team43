@@ -1,50 +1,31 @@
-:root {
-    --c-highcontrast: #011114;
-    --c-highcontrast-1: #001c21;
-    --c-lowcontrast: #F7F7F7;
-    --c-lowcontrast-1: #EFEFEF;
-    --c-palette-1: #AC060F;
-    --c-palette-2: #f78317;
-    --c-palette-3: #237F90;
-    --filet: 10px;
-}
-
-/* https://fonts.google.com */
-* {
-    font-family: "Inter Tight", Helvetica, Arial, sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    color: var(--c-highcontrast);
-}
-
-/* https://gomakethings.com/hidden-content-for-better-a11y/#hiding-the-link */
+body {
+    font-family: sans-serif;
+    background-image: url(https://i.postimg.cc/rp0bfFwD/1stImage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: blue;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  /* https://gomakethings.com/hidden-content-for-better-a11y/#hiding-the-link */
 .screen-reader {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
 }
+/* End code gomakethings */
 
-button {
-    /* background: var(--c-palette-3); */
-    color: var(--c-highcontrast-1);
-    font-weight: 800;
-    border-radius: var(--filet);
-    border: 1.4px solid var(--c-highcontrast-1);
-    padding: 2px 10px;
-}
-
-input {
-    background: var(--c-lowcontrast-1);
-    border-radius: var(--filet);
-    border: 1.4px solid var(--c-highcontrast-1);
-    padding: 2px 10px;
-}
+/* Code MOK */
 
 .header {
     padding: 10px;
@@ -102,138 +83,292 @@ input {
 }
 
 nav,
-search {
+.search {
     white-space: nowrap;
     margin-right: .2rem;
 }
-
-#banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: url(../img/stephen-hateley-unsplash-op.jpg) no-repeat center center fixed;
-    background-size: cover;
-    height: 300px;
-    color: white;
-    text-shadow: var(--c-lowcontrast-1) 1px 1px;
-}
-
-span.whiteBg {
-    background-color: var(--c-lowcontrast);
-    padding: 20px 40px;
-    border-radius: var(--filet);
+/* End code MOK */
+ 
+  /* CSS Xose Mendez */
+  .opening-hours {
+    background-color: #fff;
     text-align: center;
-}
-
-.textBanner {
+    padding: 2rem;
+  }
+  
+  .opening-hours span {
+    display: block;
+  }
+  
+  .card-section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px 10px;
-}
-
-#promos {
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
+    padding: 6rem;
     justify-content: center;
-    grid-gap: 5px 20px;
-    padding: 20px 10px;
-    background: url(../img/stephen-hateley-unsplash-op.jpg) no-repeat center center fixed;
-    background-size: cover;
-}
-
-/* https://chrisruppel.com/blog/css-animation-border-radius/ */
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-    width: 30vw;
-    border-radius: var(--filet);
-}
-
-.card:hover{
-    animation: wobble 2s ease-in-out alternate infinite;
-}
-
-@keyframes wobble {
-    50% {
-      transform: rotate(.01turn); 
-    }
-    100% {
-        transform: rotate(-.01turn); 
+  }
+  
+  @media (max-width: 500px) {
+    .card-section {
+      flex-direction: column;
     }
   }
 
-@media only screen and (max-width: 680px) {
-    #promos {
-        grid-auto-flow: row;
-        justify-content: normal;
-    }
-    .card {
-        height: auto;
-        width: 100%;
-    }
-}
-
-#newsletterSignup {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-    padding: 20px 10px;
-    background: var(--c-main);
-}
-
-footer {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
-    height: 200px;
-    background: var(--c-lowcontrast-1);
-    padding: 20px 10px;
-}
-
-address {
-    display: inline-flex;
-    flex-direction: column;
-}
-
-.footerLinks {
-    width: 30vw;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
+  .card {
+    background-color: #fff;
+    padding: 1.4rem;
     text-align: center;
-}
-
-.footerLinks:first-of-type {
-    justify-content: flex-start;
-    text-align: left;
-}
-
-.footerLinks:last-of-type {
-    justify-content: flex-end;
-    text-align: right;
-}
-
-@media only screen and (max-width: 680px) {
-    footer {
-        flex-direction: column;
+    width: fit-content;
+    margin: auto;
+    border-radius: 10px;
+    line-height: 2rem;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem auto;
+  }
+  
+  .card-button {
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .card-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    
+  }
+  
+  .card-title {
+    font-weight: bold;
+  }
+  
+  .card-button:hover {
+    transform: rotate(10deg);
+  }
+  /* End code Xose Mendez */
+  /* Code Laura Blanco */
+  * {
+    font-family: 'Inter Tight', Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: var(--c-hughcontrast); /*This is currently using a CSS variable, but the variable isn't defined so it defaults to white! Try typing your name into the email signup input field :D This can just be set to black for now, but I'll correct it when everything is merged into the main file. */
+    /* You can read more about CSS variables here: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .subscribe {
+      text-align: center;
+      font-size: 46px;
+      color: #fff;
+      background: #273f63;
+  /*     transform: translate(32.5%, 50%); */
+      width: 60%;
+    /* The reason you're having trouble here is that we don't typically have the component handle it's own positioning on the page, instead that's handled by the parent element. I'll add a parent element to the HTML so you can see how the positioning works. */
+    
+  /*    border: 5px solid #273f63;*/
+      padding: 20px;
+      
     }
-    .footerLinks, .footerLinks:last-of-type, address, #social {
-        width: 100%;
-        justify-content: center;
-        text-align: center;
+  /* This is the class I've created for the parent */
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  /*   height:500px; */
+  }
+  .subscribe p{
+      font-size: 20px;
+      margin: 7px;
+      color: #bfbfbf;
     }
+  .subscribe form input {
+      width: 25%;
+      border: none;
+      padding: 7px;
+      font-size: 20px;
+      border-radius: 4px;
+    }
+  .subscribe form button {
+      background-color: #FFA500;
+      border: none;
+      font-size: 18px;
+      text-align: center;
+      border-radius: 10px;
+      cursor: pointer; 
+      padding: 10px;
+      color: #273f63;
+    }
+  .subscribe form button a:hover {
+    color: #fff;
+  }
+  footer {
+  /*   position: absolute; */
+  /*   left: 50%; */
+  /*   transform: translate(-50%, 50%); */
+    
+  /*   Using position: absolute is tricky as it has some unintended side effects (like creating a new stacking context), and I would caution people against it. */
+  /*   Because this is the last element on the page, this will always also be at the bottom of it, so positioning isn't really needed. */
+  /*   There is an  issue if the content of the page isn't the full height of the window, but that should be solved elsewhere (either on the main element or a wrapper element) */
+    width: 100%;
+    background: #273f63;
+  /*  border-radius: 6px;*/
+  }
+  
+  /* A 'three column' layout can also be tricky to do with flexbox, especially the one we've chosen in the design. I've switched to use a grid layout here because it's easier for what we are trying to achieve. */
+  .footerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  @media only screen and (max-width: 680px) {
+    .footerGrid {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  }
+  
+  .footerGrid .logo {
+      display: flex;
+      white-space: nowrap;
+      align-items: center;
+      justify-content: left;
+      color: #fff;
+  }
+  .footerGrid .logo svg {
+      margin: 20px;
+  }
+  .footerGrid .logo p{
+  /*     transform: translate(-84%,250%); */
+  /*   See line 27 in the html */
+      color: #bfbfbf;
+      font-style: italic;
+  }
+  
+  footer .footerRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+  }
+  
+  hr{
+    margin-left:1.5%;
+    width: 97%;
+    color: #fff;
+  }
+  
+  .footerRow .footerColumn h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 0px;
+  }
+  address {
+    margin-top: 20px;
+  }
+  address p {
+    color: #bfbfbf;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-style: italic;
+  }
+  address .p a{
+    color: #bfbfbf;
+    margin-bottom: 5px;
+    font-weight: 400;
+  }
+  address p a:link {
+    text-decoration: none;
+  }
+  address p a:hover{
+    color: #fff;
+    margin-bottom: 5px;
+    font-weight: 400;
+  }
+  .footerColumn .footerLinks {
+    margin-top: 20px;
+  }
+  .footerColumn .footerLinks li {
+    list-style: none;
+    margin-bottom: 5px;
+    color: #bfbfbf;
+  }
+  .footerColumn .footerLinks li a {
+    text-decoration: none;
+    color: #bfbfbf;
+  }
+  .footerColumn .footerLinks li a:hover {
+    color: #fff;
+  }
+  .buttonApp {
+    background-color: #FFA500;   
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  /*   position: fixed; */
+  /*   left: 50%; */
+  /*   transform: translate(-50%, 60%); */
+    
+  /*   position: fixed means that elmeent is always in the same place, regardless of where the user scrolls on the page */
+    border-radius: 10px;
+    color: #273f63;
+    align-self: center;
+  /*   While I've written above that elements should not care where they are on the page, there can be some exceptions. If we know a button should ALWAYS appear vertically centered in its parent, we can use align-self */
+  }
+  .buttonApp a:link {
+    text-decoration: none;
+  }
+  .buttonApp a:hover {
+    color: #fff;
+  }
+  /* End code Laura Blanco */
+  /* Code by Tej */
+  .breadcrumbs ol svg {
+    width: 24px;
+    vertical-align: middle;
 }
 
-form span {
-    white-space: nowrap;
+.breadcrumbs{
+font-family: "Roboto", sans-serif;
+padding: 10px 48px;
+box-shadow: 0 4px 30px -10px rgba(0, 0, 0, 0.2);
+width: fit-content;
 }
+
+.breadcrumbs ol{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 8px;
+}
+
+.breadcrumbs ol li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.breadcrumbs ol li a:hover{
+    color: #0984e3;
+}
+/* very nice use of pseudo classes */
+.breadcrumbs ol li:last-child{
+    font-weight: bold;
+}
+
+.breadcrumbs ol li a:not(:first-child):before{
+    content: ", ";
+}
+
+.breadcrumbs ol li.arrow svg{
+    width: 18px;
+}
+  /* End code Tej */
