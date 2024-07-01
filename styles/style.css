@@ -1,16 +1,22 @@
+/* Consolidated code from team */
 body {
-    font-family: sans-serif;
     background-image: url(../img/stephen-hateley-unsplash-op.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     background-color: blue;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
   }
+  /* End consolidated code */
   
+  /* https://fonts.google.com */
+* {
+    font-family: "Inter Tight", Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: var(--c-highcontrast);
+}
+/* End code fonts.google.com */
+
   /* https://gomakethings.com/hidden-content-for-better-a11y/#hiding-the-link */
 .screen-reader {
 	border: 0;
@@ -32,6 +38,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    background-color: white;
 }
 
 .logo {
@@ -60,7 +67,7 @@ body {
 
     .headerLinks {
         flex-wrap: wrap;
-        flex-display: column;
+        flex-direction: column;
         flex-basis: 100%;
     }
 
@@ -149,16 +156,7 @@ nav,
   }
   /* End code Xose Mendez */
   /* Code Laura Blanco */
-  * {
-    font-family: 'Inter Tight', Helvetica, Arial, sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    color: var(--c-hughcontrast); /*This is currently using a CSS variable, but the variable isn't defined so it defaults to white! Try typing your name into the email signup input field :D This can just be set to black for now, but I'll correct it when everything is merged into the main file. */
-    /* You can read more about CSS variables here: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  
   .subscribe {
       text-align: center;
       font-size: 46px;
@@ -312,6 +310,8 @@ nav,
     padding: 10px;
     font-size: 18px;
     font-weight: bold;
+    width: fit-content;
+    text-decoration: none;
   /*   position: fixed; */
   /*   left: 50%; */
   /*   transform: translate(-50%, 60%); */
