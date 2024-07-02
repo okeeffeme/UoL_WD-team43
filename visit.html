@@ -8,7 +8,7 @@
     <meta name="author" content="Team 43, Laura Blanco, Tejinder Singh
 , M. O'Keeffe, Xose Mendez">
     <meta name="viewport" content="width=device-width, inital-scale=1.0">
-    <title>Webquest 43 Park | Plan Your Visit</title>
+    <title>Webquest 43 Park</title>
     <!-- Code from fonts.google.com -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,102 +20,308 @@
 </head>
 <!-- Code from MOK -->
 <header class='header'>
-    <div class='logo'>
-        <svg width="60px" height="60px" viewBox="0 0 24 24" id="logo" aria-describedBy="logoDesc">
-            <rect width="24" height="24" rx="24" fill="white" />
-            <rect id="primary" x="9" y="2" width="6" height="12" rx="2" fill="cyan"></rect>
-            <circle id="secondary" cx="12" cy="19" r="3" fill="cyan"></circle>
-            <desc id="logoDesc">The Team 43 WebPark logo</desc>
-        </svg>
-        <h1> Webpark 43</h1>
-    </div>
+    <a class='logo' href="./index.html">
+        <div class='logo'>
+            <svg width="60px" height="60px" viewBox="0 0 24 24" id="logo" aria-describedBy="logoDesc">
+                <rect width="24" height="24" rx="24" fill="#004FB6" />
+                <rect id="primary" x="9" y="2" width="6" height="12" rx="2" fill="#FFF"></rect>
+                <circle id="secondary" cx="12" cy="19" r="3" fill="#FFF"></circle>
+                <desc id="logoDesc">The Team 43 WebPark logo</desc>
+            </svg>
+            <h1> Webpark 43</h1>
+        </div>
+    </a>
     <div class='headerLinks'>
         <nav id='navigationLinks'>
             <a href='./visit.html'>Plan Your Visit</a>
+            <a href='./attractions.html'>Attractions</a>
             <a href='./tickets.html'>Buy Tickets</a>
         </nav>
         <!-- There is an error with the HTML validator that results in the search element not being a 'valid' child of the header element. While this is an error with the validator, we will remove this element for now. -->
         <!-- <search> -->
-        <form action="./search/">
+        <form action="./oops.html" class="search">
             <label for="mainSearch" class='screen-reader'>Search the site</label>
             <input type="search" id="mainSearch" placeholder='Looking for something?'>
-            <button type="submit">&#x1F50E;&#xFE0E;</button>
+            <button class='btn3' type="submit">&#x1F50E;&#xFE0E;</button>
         </form>
         <!-- </search> -->
-        <button type="button" class='login'>Login</button>
+        <button type="button" class='btn3' disabled>Login</button>
     </div>
 </header>
+<body>
 <!-- End code from MOK -->
+ <!-- Code from Xose Mendez, MOK adding semantic tags -->
+<div class="banner">
+    <div class="card">
+        <h2 class="card-title">Plan Your Visit</h2>
+        <p class="card-description">Everything you need to know</p>
+        <!-- MOK -->
+        <div class="ticket">
+            <a href='./tickets.html'>Get Tickets Now!</a>
+        </div>
+        <!-- end MOK -->
+    </div>
+</div>
+<!-- End code from Xose Mendez -->
+<!-- Code from Tej, MOK adding screenreader support -->
 <!-- Code from Tej, MOK adding some screenreader support -->
 <nav aria-label="Breadcrumb" class="breadcrumbs">
     <ol>
         <li>
             <a href="./index.html">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6" aria-describedBy="homeDesc">
-                    <path
-                        d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
-                    <path
-                        d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
-                        <desc id="homeDesc">Navigate Home</desc>
-                </svg>
+                Home
             </a>
         </li>
         <li class="arrow" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                <path fill-rule="evenodd"
-                    d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
-                    clip-rule="evenodd" />
-            </svg>
+            >
         </li>
         <li>
             <a href="./visit.html">Plan your trip</a>
         </li>
-        <li class="arrow" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                <path fill-rule="evenodd"
-                    d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
-                    clip-rule="evenodd" />
-            </svg>
-        </li>
-        <li>
-            <a href="./attractions.html">Attractions</a>
-        </li>
     </ol>
 </nav>
 <!-- End code from Tej -->
+<!-- End Code Tej -->
+<section id="Directions" class="information">
+    <div class="section-title"><h2>How to Visit Us</h2></div>
+    <!-- Code from Laura -->
+    <h3>Address</h3>
+    <address>
+        <p>Camiño Ancho 57</p>
+        <p>Guijuelo Salamanca 37770</p>
+        <p><a href='mailto:email@email.com'>email@email.com</a></p>
+        <p><a href="tel:+0000000000">+00 000 00 000</a></p>
+    </address>
+     <!-- End code Laura -->
+    <!-- Code from Tej -->
+    <details>
+        <summary>Airport</summary>
+        <p><strong>Nearest Airport:</strong> Salamanca Airport</p>
+        <address>Ctra. Madrid, Km. 14, 37181 Matacán, Salamanca, Spania</address>
+    </details>
+    <details>
+        <summary>Parking</summary>
+        <p><strong>Main Parking:</strong>
+        <address>Camiño Ancho 57,Guijuelo Salamanca, 37770</address>
+        <p><strong>Special Access Parking:</strong></p>
+        <address>Camiño Ancho 54,Guijuelo Salamanca, 37770</address>
+        <p><strong>Contact:</strong> <a href="tel:+0000000000">+00 000 00 000</a> | <a
+                href='mailto:email@email.com'>email@email.com</a></p>
+    </details>
+    <details>
+        <summary>Train</summary>
+        <p><strong>Nearest Station:</strong> Sevilla (Plaza de Armas)</p>
+        
+    </details>
+    <!-- End code from Tej -->
+</section>
+<!-- Code MOK -->
+<img src="./img/citlalli-zyanya-unsplash.png" alt="A 3D rendering of the park">
+<!-- End code MOK -->
 <!-- Code from Xose Mendez, MOK adding semantic tags -->
-<div class="season">
-    <div class="card">
-        <h2 class="card-title">Summer Season 2024</h2>
-        <p>June 10th - September 22nd</p>
-    </div>
+<div class="opening-hours">
+    <h2>Opening Hours</h2>
+    <p>Tuesday thru Thursday <time datetime="09:00">9AM</time> to <time datetime="21:00">9PM</time></p>
+    <p>Friday, Saturday, Sunday <time datetime="09:00">9AM</time> to <time datetime="00:00">12PM</time></p>
+    <p>Closed Monday</p>
 </div>
 <!-- End code from Xose Mendez -->
 <!-- Code from Xose Mendez, MOK adding semantic tags -->
-<div class="card-section">
+<section id="accommodations" class="card-section"> <!-- MOK adding section, h3-->
+    <div class="section-title"><h2>Accommodations</h2></div>
+    <div class="card-align">
     <div class="card card-button">
-        <a class="card-link" href="#">
-            <h2 class="card-title">Buy Tickets</h2>
-            <p class="card-description">Pick the best value for you</p>
+        <a class="card-link" href="./tickets.html">
+            <img src="./img/johan-mouchet-unsplash.jpg" alt="Plaza outside Hotel Entredos">
+            <h3 class="card-title">Hotel Entredos</h3>
+            <p class="card-description">25 km from the park</p>
         </a>
     </div>
     <div class="card card-button">
-        <a class="card-link" href="#">
-            <h2 class="card-title">Buy Tickets</h2>
-            <p class="card-description">Pick the best value for you</p>
+        <a class="card-link" href="./tickets.html">
+            <img src="./img/nik-lanus-unsplash.jpg" alt="Bed at Hotel Rural Salvatierra">
+            <h3 class="card-title">Hotel Rural Salvatierra</h3>
+            <p class="card-description">7.3 km from the Park</p>
         </a>
     </div>
     <div class="card card-button">
-        <a class="card-link" href="#">
-            <h2 class="card-title">Buy Tickets</h2>
-            <p class="card-description">Pick the best value for you</p>
+        <a class="card-link" href="./tickets.html">
+            <img src="./img/rhema-kallianpur-unsplash.jpg" alt="Bed at Villa de Salvatierra">
+            <h3 class="card-title">Villa de Salvatierra</h3>
+            <p class="card-description">7.3 km from the Park</p>
         </a>
     </div>
 </div>
+</section>
+<!-- End code from Xose Mendez -->
+
+<section id="FAQ" class="information">
+    <div class="section-title"><h2>Park Information</h2></div>
+    <h3>Services</h3>
+    <!-- Code from Tej -->
+    <details>
+        <summary>Accessibilty Access</summary>
+        <ul>
+
+            <li>All rides <strong>except Whitewater</strong> are wheel-chair accessible.</li>
+            <li>Vans and other large vehicles can use the Special Access Parking lot upon request.</li>
+            <li>There are ramps in the park, ramps over a 12 rise-to-run ratio have nearby lifts.</li>
+            <li>If you require special transportion within the park, please call guest services before your arrival.
+            </li>
+        </ul>
+    </details>
+    <details>
+        <summary>First Aid</summary>
+        <p><strong>Guest Services:</strong> Main Entrance</p>
+        <p><strong>Station 1:</strong> Next to Grand Mountain</p>
+        <p><strong>Station 2:</strong> Next to Whitewater</p>
+        <address><strong>Hospital Los Montalvos</strong> Carretera de Ciudad Rodrigo, 37197 Carrascal de Barregas, Salamanca, Spania</address>
+    </details>
+    <details>
+        <summary>Parking</summary>
+        <p><strong>Main Parking:</strong></p>
+        <address>Camiño Ancho 57,Guijuelo Salamanca, 37770</address>
+        <p><strong>Special Access Parking:</strong></p>
+        <address>Camiño Ancho 54,Guijuelo Salamanca, 37770</address>
+        <p><strong>Contact:</strong> <a href="tel:+0000000000">+00 000 00 000</a> | <a
+                href='mailto:email@email.com'>email@email.com</a></p>
+    </details>
+    <details>
+        <summary>Pet Sitting</summary>
+        <p><strong>Hours of Operation:</strong> 10:00 AM - 8:00 PM (Tues-Sun)</p>
+        <p><strong>Location:</strong> Guest Services, Main Entrance</p>
+        <p><strong>Contact:</strong> <a href="tel:+0000000000">+00 000 00 000</a> | <a
+                href='mailto:email@email.com'>email@email.com</a></p>
+
+        <h4>We accomidate</h4>
+        <ul>
+            <li>Dogs</li>
+            <li>Cats</li>
+            <li>Other animals upon request</li>
+        </ul>
+    </details>
+    <!-- End code from Tej -->
+    <h3>Inside the Park</h3>
+    <!-- Code from Tej -->
+    <details>
+        <summary>Information Points</summary>
+        <p>There are several information points across the park, as noted in the park map. Information is also
+            avalible at all rides via the queue screens, real-time information regarding security or severe weather
+            will be broadcasted.</p>
+    </details>
+    <details>
+        <summary>Security</summary>
+        <p><strong>Guest Services:</strong> Main Entrance</p>
+        <p><strong>Station 1:</strong> Next to Grand Mountain</p>
+        <p><strong>Station 2:</strong> Next to Whitewater</p>
+        <p><strong>Park security will always be in uniform.</strong></p>
+    </details>
+    <details>
+        <summary>Lost Objects</summary>
+        <p><strong>Guest Services:</strong></p>
+        <address>Camiño Ancho 54,Guijuelo Salamanca, 37770</address>
+        <p><strong>Contact:</strong> <a href="tel:+0000000000">+00 000 00 000</a> | <a
+                href='mailto:email@email.com'>email@email.com</a></p>
+    </details>
+    <details>
+        <summary>Lost Guests</summary>
+        <p><strong>Location:</strong> Guest Services, Main Entrance</p>
+        <p><strong>Contact:</strong> <a href="tel:+0000000000">+00 000 00 000</a> | <a
+                href='mailto:email@email.com'>email@email.com</a></p>
+    </details>
+    <!-- End code from Tej -->
+</section>
+<!-- Code from Xose Mendez, MOK adding semantic tags -->
+<section id="attractions" class="card-section"> <!-- MOK adding section, h3-->
+    <div class="section-title"><h2>Attractions</h2></div>
+    <div class="card-align">
+    <div class="card card-button">
+        <a class="card-link" href="./attractions.html">
+            <img src="./img/chris-richmond-unsplash-op.jpg" alt="Twister Ride in the air">
+            <dl class="card-description">
+                <dt class="card-title">Twister</dt>
+                <dd>Medium Intensity</dt>
+                <dd>Accessible</dd>
+            </dl>
+        </a>
+    </div>
+    <div class="card card-button">
+        <a class="card-link" href="./attractions.html">
+            <img src="./img/jonny-gios-unsplash-op.jpg" alt="Ninja roller coaster before descent">
+            <dl class="card-description">
+                <dt class="card-title">Ninja</dt>
+                <dd>High Intensity</dt>
+                <dd>Accessible</dd>
+            </dl>
+        </a>
+    </div>
+    <div class="card card-button">
+        <a class="card-link" href="./attractions.html">
+            <img src="./img/visit-qatar-2-unsplash.jpg" alt="Large water slide">
+            <dl class="card-description">
+                <dt class="card-title">Whitewater</dt>
+                <dd>High Intensity</dt>
+                <dd>Not Accessible</dd>
+            </dl>
+        </a>
+    </div>
+</div>
+</section>
+<!-- End code from Xose Mendez -->
+<section id="events" class="card-section"> <!-- MOK adding section, h3-->
+    <div class="section-title"><h2>Events</h2></div>
+    <div class="card-align">
+    <div class="card card-button">
+        <a class="card-link" href="./tickets.html">
+            <img src="./img/matthew-ball-unsplash.jpg" alt="A birthday party at the park">
+            <h3 class="card-title">20 Year Celebration</h3>
+            <p class="card-description">Celebrate Our Birthday</p>
+        </a>
+    </div>
+    <div class="card card-button">
+        <a class="card-link" href="./tickets.html">
+            <img src="./img/kenny-eliason-unsplash.jpg" alt="Halloween at the park">
+            <h3 class="card-title">Holiday Events</h3>
+            <p class="card-description">See Upcoming Festivities</p>
+        </a>
+    </div>
+    <div class="card card-button">
+        <a class="card-link" href="./tickets.html">
+            <img src="./img/jed-villejo-unsplash.jpg" alt="Water ride with people having fun">
+            <h3 class="card-title">Water Park Opening</h3>
+            <p class="card-description">Time to Splash</p>
+        </a>
+    </div>
+</div>
+</section>
+<section id="tickets" class="card-section"> <!-- MOK adding section, h3-->
+    <div class="section-title"><h2>Tickets</h2></div>
+    <div class="card-align">
+    <div class="card card-button">
+        <a class="card-link" href="./tickets.html">
+            <h3 class="card-title">Single Tickets</h3>
+            <p class="card-description">Individual Experiences</p>
+        </a>
+    </div>
+    <div class="card card-button">
+        <a class="card-link" href="./tickets.html">
+            <h3 class="card-title">Group Tickets</h3>
+            <p class="card-description">Families, Teams, and Friends</p>
+        </a>
+    </div>
+    <div class="card card-button">
+        <a class="card-link" href="./tickets.html">
+            <h3 class="card-title">Hotel & Ticket Packages</h3>
+            <p class="card-description">Bundle Up the Best Value</p>
+        </a>
+    </div>
+</div>
+</section>
 <!-- End code from Xose Mendez -->
 <!-- Code from Laura Blanco -->
-
-<section class='center'>
+<!-- MOK adding section -->
+<section id="emailSignup" class='center'>
+    <!-- end MOK -->
     <div class="subscribe">
         <h4>Sign up to get news and discounts!</h4>
         <p>Get great deals on tickets and stay up to date on park event with our newsletter!</p>
@@ -130,6 +336,7 @@
     </div>
 </section>
 
+</body>
 <footer class="footer">
     <div class="footerGrid">
         <div class='logo'>
@@ -138,7 +345,7 @@
                 <p>Where your dreams come true</p>
             </div>
         </div>
-        <a class="buttonApp" href="#">Access to Mobile App</a>
+        <a class="buttonApp" href="./oops.html">Access to Mobile App</a>
     </div>
     <hr>
     <div class="footerRow">
@@ -147,33 +354,33 @@
             <address>
                 <p>Camiño Ancho 57</p>
                 <p>Guijuelo Salamanca 37770</p>
-                <a href='mailto:email@email.com'>email@email.com</a>
-                <a href="tel:+0000000000">+00 000 00 000</a>
+                <p><a href='mailto:email@email.com'>email@email.com</a></p>
+                <p><a href="tel:+0000000000">+00 000 00 000</a></p>
             </address>
         </div>
         <div class="footerColumn">
             <h3>Social Media</h3>
             <ul class="footerLinks">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">X</a></li>
-                <li><a href="#">TikTok</a></li>
+                <li><a href="./oops.html">Facebook</a></li>
+                <li><a href="./oops.html">Instagram</a></li>
+                <li><a href="./oops.html">X</a></li>
+                <li><a href="./oops.html">TikTok</a></li>
             </ul>
         </div>
         <div class="footerColumn">
             <h3>Information</h3>
             <ul class="footerLinks">
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="./visit.html">FAQs</a></li>
+                <li><a href="./visit.html">Services</a></li>
+                <li><a href="./visit.html">About Us</a></li>
             </ul>
         </div>
         <div class="footerColumn">
             <h3>Legal</h3>
             <ul class="footerLinks">
-                <li><a href="#">Terms of service</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Release</a></li>
+                <li><a href="./legal.html">Terms of service</a></li>
+                <li><a href="./legal.html">Privacy Policy</a></li>
+                <li><a href="./legal.html">Release</a></li>
             </ul>
         </div>
     </div>
