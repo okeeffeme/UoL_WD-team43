@@ -38,7 +38,7 @@ body {
 /* https://gomakethings.com/hidden-content-for-better-a11y/#hiding-the-link */
 .screen-reader {
     border: 0;
-    clip: rect(0 0 0 0);
+    clip-path: rect(0 0 0% 0%);
     height: 1px;
     margin: -1px;
     overflow: hidden;
@@ -539,7 +539,6 @@ address p a:hover {
 }
 
 .breadcrumbs {
-    font-family: "Roboto", sans-serif;
     padding: 10px 48px;
     box-shadow: 0 4px 30px -10px rgba(0, 0, 0, 0.2);
     width: 100%;
