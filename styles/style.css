@@ -1,3 +1,4 @@
+/* Code MOK */
 :root {
     --c-highcontrast: #001c21;
     --c-lowcontrast: #F7F7F7;
@@ -7,11 +8,13 @@
     --c-palette-3: #D5ECEC;
     --c-palette-4: #FFE858;
     --filet: 10px;
+    /* Gradients created with https://cssgradient.io/ */
     --gradient-1: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(213, 236, 236, 1) 33%, rgba(39, 245, 184, 1) 66%, rgba(255, 232, 88, 1) 100%);
     --gradient-2: linear-gradient(135deg, rgba(255, 232, 88, 1) 0%, rgba(39, 245, 184, 1) 100%);
     --gradient-3: linear-gradient(135deg,  rgba(39, 245, 184, 1) 0%, rgba(213, 236, 236, 1) 100%);
 
 }
+/* End code MOK */
 
 /* Consolidated code from team */
 body {
@@ -22,12 +25,6 @@ body {
     height: 100vh;
     width: 100vw;
 }
-
-body#components {
-    background: white;
-    padding: 40px;
-}
-
 /* End consolidated code */
 
 /* https://fonts.google.com */
@@ -36,7 +33,6 @@ body#components {
     font-optical-sizing: auto;
     font-style: normal;
 }
-
 /* End code fonts.google.com */
 
 /* https://gomakethings.com/hidden-content-for-better-a11y/#hiding-the-link */
@@ -51,7 +47,6 @@ body#components {
     white-space: nowrap;
     width: 1px;
 }
-
 /* End code gomakethings */
 
 /* https://www.gradient-animator.com/ */
@@ -83,7 +78,6 @@ body#components {
 
 /* Code MOK */
 button {
-    /* background: var(--c-palette-3); */
     color: var(--c-highcontrast);
     font-weight: 800;
     border-radius: var(--filet);
@@ -92,22 +86,16 @@ button {
     cursor: pointer;
 }
 
-button.btn1 {
-    color: var(--c-palette-2);
-    border: 1.4px solid var(--c-palette-4);
-    background: var(--c-palette-4);
-}
-
-button.btn2 {
-    color: var(--c-palette-4);
-    border: 1.4px solid var(--c-palette-2);
-    background: var(--c-palette-2);
-}
-
-button.btn3 {
+button.button-1 {
     color: var(--c-palette-1);
     border: 1.4px solid var(--c-palette-2);
     background: var(--c-palette-2);
+}
+
+button.button-1:hover {
+    color: var(--c-palette-2);
+    border: 1.4px solid var(--c-palette-1);
+    background: var(--c-palette-1);
 }
 
 .ticket {
@@ -122,7 +110,7 @@ button.btn3 {
     padding: 20px;
     clip-path: polygon(10% 0%, 90% 0%, 100% 20%, 100% 80%, 90% 100%, 10% 100%, 0% 80%, 0% 20%);
     cursor: pointer;
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .ticket:hover {
@@ -173,7 +161,7 @@ a:hover {
     background: rgb(213, 236, 236);
     background: var(--gradient-1);
     background-size: 300% 300%;
-    animation: animateBackground 20s ease infinite;
+    animation: animateBackground 10s ease infinite;
 }
 
 .logo {
@@ -189,7 +177,7 @@ a:hover {
     margin: 10px;
 }
 
-.headerLinks {
+.header-links {
     flex: 2 1;
     display: flex;
     align-items: center;
@@ -203,7 +191,7 @@ a:hover {
         flex-basis: 100%;
     }
 
-    .headerLinks {
+    .header-links {
         flex-wrap: wrap;
         flex-direction: column;
         flex-basis: 100%;
@@ -217,9 +205,9 @@ a:hover {
     }
 
     nav a,
-    search,
-    search input,
-    button.login {
+    .search,
+    .search input,
+    button#login {
         flex-basis: 100%;
         width: 100%;
         text-align: center;
@@ -233,14 +221,13 @@ nav,
     margin-right: .4rem;
 }
 
-.banner {
-    height: 50vh;
+.banner,
+.center {
+    min-height: 50vh;
     display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-.no-background {
-    background: transparent !important;
+    padding: 20px;
 }
 
 section .section-title {
@@ -296,8 +283,6 @@ details summary {
     font-weight: bold;
     cursor: pointer;
 }
-
-
 /* End code MOK */
 
 /* CSS Xose Mendez */
@@ -324,9 +309,7 @@ details summary {
 }
 
 .card {
-    /* MOK, add for ticket */
-    position: relative;
-    /* end MOK */
+    position: relative; /* MOK, added for ticket */
     background: var(--c-lowcontrast);
     text-align: center;
     width: fit-content;
@@ -375,8 +358,7 @@ details summary {
 }
 
 /* End code Xose Mendez */
-/* Code Laura Blanco */
-
+/* Code Laura Blanco, support from MOK */
 .subscribe {
     text-align: center;
     font-size: 46px;
@@ -385,18 +367,7 @@ details summary {
     width: 60%;
     padding: 20px;
     border-radius: var(--filet);
-
 }
-
-/* MOK */
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-/* End MOK */
 
 .subscribe p {
     font-size: 20px;
@@ -421,6 +392,11 @@ details summary {
     cursor: pointer;
     padding: 10px;
     color: var(--c-palette-2);
+}
+
+.subscribe form button:hover {
+    color: var(--c-palette-2);
+    background-color: var(--c-palette-1);
 }
 
 .subscribe form button a:hover {
@@ -532,7 +508,7 @@ address p a:hover {
     color: var(--c-palette-1);
 }
 
-.buttonApp {
+.button-app {
     color: var(--c-palette-2);
     background-color: var(--c-palette-4);
     border: none;
@@ -546,15 +522,16 @@ address p a:hover {
     justify-self: center;
 }
 
-.buttonApp a:link {
+.button-app a:link {
     text-decoration: none;
 }
 
-.buttonApp a:hover {
-    color: var(--c-lowcontrast);
+.button-app:hover {
+    color: var(--c-palette-2);
+    background-color: var(--c-palette-1);
 }
-
 /* End code Laura Blanco */
+
 /* Code by Tej */
 .breadcrumbs ol svg {
     width: 24px;

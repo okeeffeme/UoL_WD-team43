@@ -65,7 +65,7 @@ input {
     margin: 10px;
 }
 
-.headerLinks {
+.header-links {
     flex: 2 1;
     display: flex;
     align-items: center;
@@ -77,7 +77,7 @@ input {
         flex-basis: 100%;
     }
 
-    .headerLinks {
+    .header-links {
         flex-wrap: wrap;
         flex-display: column;
         flex-basis: 100%;
