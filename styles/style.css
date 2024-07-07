@@ -421,6 +421,7 @@ details summary {
 }
 /* MOK adding padding for h1 */
 h1.card-title {
+    padding-top: 2rem;
     padding-bottom: .4rem;
 }
 
