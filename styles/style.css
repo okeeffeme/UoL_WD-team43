@@ -1,4 +1,4 @@
-/* Code MOK */
+/* Author MOK */
 :root {
     --c-highcontrast: #001c21;
     --c-lowcontrast: #F7F7F7;
@@ -11,10 +11,11 @@
     /* Gradients created with https://cssgradient.io/ */
     --gradient-1: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(213, 236, 236, 1) 33%, rgba(39, 245, 184, 1) 66%, rgba(255, 232, 88, 1) 100%);
     --gradient-2: linear-gradient(135deg, rgba(255, 232, 88, 1) 0%, rgba(39, 245, 184, 1) 100%);
-    --gradient-3: linear-gradient(135deg,  rgba(39, 245, 184, 1) 0%, rgba(213, 236, 236, 1) 100%);
+    --gradient-3: linear-gradient(135deg, rgba(39, 245, 184, 1) 0%, rgba(213, 236, 236, 1) 100%);
 
 }
-/* End code MOK */
+
+/* End author MOK */
 
 /* Consolidated code from team */
 body {
@@ -25,6 +26,7 @@ body {
     height: 100vh;
     width: 100vw;
 }
+
 /* End consolidated code */
 
 /* https://fonts.google.com */
@@ -33,9 +35,11 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
 }
+
 /* End code fonts.google.com */
 
 /* https://gomakethings.com/hidden-content-for-better-a11y/#hiding-the-link */
+/* MOK updating clip to clip-path */
 .screen-reader {
     border: 0;
     clip-path: rect(0 0 0% 0%);
@@ -47,36 +51,66 @@ body {
     white-space: nowrap;
     width: 1px;
 }
+
 /* End code gomakethings */
 
 /* https://www.gradient-animator.com/ */
 @-webkit-keyframes animateBackground {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }
+
 @-moz-keyframes animateBackground {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }
+
 @keyframes animateBackground {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }
+
 /* end https://www.gradient-animator.com/ */
 
+/* Used to animate the Banner Buy tickets! */
 @keyframes wobbleTicket {
     50% {
-      transform: rotate(14deg); 
+        transform: rotate(14deg);
     }
-    100% {
-        transform: rotate(20deg); 
-    }
-  }
 
-/* Code MOK */
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+/* Author MOK */
 button {
     color: var(--c-highcontrast);
     font-weight: 800;
@@ -98,24 +132,43 @@ button.button-1:hover {
     background: var(--c-palette-1);
 }
 
+/* Styling links to look like buttons */
+a.button-1 {
+    text-decoration: none;
+    color: var(--c-palette-1);
+    font-weight: 800;
+    border-radius: var(--filet);
+    padding: 2px 10px;
+    cursor: pointer;
+    border: 1.4px solid var(--c-palette-2);
+    background: var(--c-palette-2);
+}
+
+a.button-1:hover {
+    color: var(--c-palette-2) !important;
+    border: 1.4px solid var(--c-palette-1);
+    background: var(--c-palette-1);
+}
+
+/* The banner Buy Tickets! */
 .ticket {
     color: var(--c-highcontrast);
     background: var(--c-palette-4);
     border-top: 4px solid #f2dc5d;
-    border-bottom: 4px solid  #f2dc5d;
+    border-bottom: 4px solid #f2dc5d;
     position: absolute;
     right: -100px;
     top: -60px;
     transform: rotate(16deg);
     padding: 20px;
-    clip-path: polygon(10% 0%, 90% 0%, 100% 20%, 100% 80%, 90% 100%, 10% 100%, 0% 80%, 0% 20%);
+    clip-path: polygon(10% 0%, 90% 0%, 100% 20%, 100% 80%, 90% 100%, 10% 100%, 0% 80%, 0% 20%); /* This creates the ticket shape */
     cursor: pointer;
     transition: all 0.3s ease-out;
 }
 
 .ticket:hover {
     animation: wobbleTicket 2s ease-in-out alternate infinite;
-} 
+}
 
 .ticket a,
 .ticket a:hover {
@@ -124,6 +177,7 @@ button.button-1:hover {
     color: var(--c-highcontrast);
 }
 
+/* General styling for inputs */
 input,
 textarea,
 select {
@@ -145,6 +199,7 @@ input[type='checkbox'] {
     min-width: 2rem;
 }
 
+/* General link styling */
 a {
     color: var(--c-palette-2);
 }
@@ -153,6 +208,7 @@ a:hover {
     color: var(--c-palette-2);
 }
 
+/* Styling for the header */
 .header {
     padding: 10px;
     display: flex;
@@ -162,6 +218,12 @@ a:hover {
     background: var(--gradient-1);
     background-size: 300% 300%;
     animation: animateBackground 10s ease infinite;
+}
+
+header .header-links a:hover {
+    color: var(--c-highcontrast);
+    text-decoration-color: var(--c-palette-2);
+    background-color: var(--c-palette-1);
 }
 
 .logo {
@@ -186,6 +248,7 @@ a:hover {
     padding-right: 1rem;
 }
 
+/* Resize styling for the header */
 @media only screen and (max-width: 680px) {
     .logo {
         flex-basis: 100%;
@@ -221,6 +284,7 @@ nav,
     margin-right: .4rem;
 }
 
+/* General section styling to handle layout */
 .banner,
 .center {
     min-height: 50vh;
@@ -230,6 +294,7 @@ nav,
     padding: 20px;
 }
 
+div .section-title,
 section .section-title {
     width: auto;
     height: 1.4rem;
@@ -239,6 +304,8 @@ section .section-title {
     padding: 0 20px;
     margin-bottom: 20px;
 }
+
+div .section-title h2,
 section .section-title h2 {
     text-decoration: underline;
     text-decoration-color: var(--c-palette-2);
@@ -247,11 +314,11 @@ section .section-title h2 {
 }
 
 section.information {
-    background:var(--c-lowcontrast-1);
+    background: var(--c-lowcontrast-1);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-around;
     padding: 20px;
 }
 
@@ -263,6 +330,7 @@ section.information address {
     padding-bottom: .4rem;
 }
 
+div.card-section,
 section.card-section {
     display: flex;
     flex-direction: column;
@@ -272,6 +340,7 @@ section.card-section {
     background: var(--c-palette-3);
 }
 
+/* Styling details element */
 details {
     width: 400px;
     max-width: 80vw;
@@ -283,9 +352,10 @@ details summary {
     font-weight: bold;
     cursor: pointer;
 }
-/* End code MOK */
 
-/* CSS Xose Mendez */
+/* End author MOK */
+
+/* Author Xose Mendez */
 .opening-hours {
     background-color: var(--c-lowcontrast);
     text-align: center;
@@ -309,7 +379,8 @@ details summary {
 }
 
 .card {
-    position: relative; /* MOK, added for ticket */
+    position: relative;
+    /* MOK, added for ticket */
     background: var(--c-lowcontrast);
     text-align: center;
     width: fit-content;
@@ -348,6 +419,10 @@ details summary {
     font-weight: bold;
     padding: 1.4rem 1.4rem 0 1.4rem;
 }
+/* MOK adding padding for h1 */
+h1.card-title {
+    padding-bottom: .4rem;
+}
 
 .card-description {
     padding: 0 1.4rem 1.4rem 1.4rem;
@@ -357,8 +432,10 @@ details summary {
     transform: rotate(10deg);
 }
 
-/* End code Xose Mendez */
-/* Code Laura Blanco, support from MOK */
+/* End author Xose Mendez */
+
+/* Author Laura Blanco, support from MOK */
+/* Styling for the email signup */
 .subscribe {
     text-align: center;
     font-size: 46px;
@@ -403,6 +480,7 @@ details summary {
     color: var(--c-lowcontrast);
 }
 
+/* Styling for the footer */
 footer {
     width: 100%;
     background: var(--c-palette-2);
@@ -415,6 +493,7 @@ footer {
     padding: 20px;
 }
 
+/* Resize footer */
 @media only screen and (max-width: 680px) {
     .footerGrid {
         grid-template-columns: 1fr;
@@ -446,7 +525,7 @@ footer .footerRow {
     padding: 30px;
 }
 
-hr {
+footer hr {
     margin-left: 1.5%;
     width: 97%;
     color: var(--c-palette-1);
@@ -472,16 +551,6 @@ hr {
 
 .footerRow address .p a {
     color: var(--c-lowcontrast-1);
-    margin-bottom: 5px;
-    font-weight: 400;
-}
-
-address p a:link {
-    text-decoration: none;
-}
-
-address p a:hover {
-    color: var(--c-palette-1);
     margin-bottom: 5px;
     font-weight: 400;
 }
@@ -530,9 +599,21 @@ address p a:hover {
     color: var(--c-palette-2);
     background-color: var(--c-palette-1);
 }
-/* End code Laura Blanco */
 
-/* Code by Tej */
+/* General Address styling  */
+address p a:link {
+    text-decoration: none;
+}
+
+address p a:hover {
+    color: var(--c-palette-1);
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+/* End Author Laura Blanco */
+
+/* Author Tej */
 .breadcrumbs ol svg {
     width: 24px;
     vertical-align: middle;
@@ -576,4 +657,4 @@ address p a:hover {
     width: 18px;
 }
 
-/* End code Tej */
+/* End author Tej */

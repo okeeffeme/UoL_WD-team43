@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="The offical website for the Webquest 43 Park">
+    <meta name="description" content="The official  website for the Webquest 43 Park">
     <meta name="keywords" content="Themepark, Roller coasters, Adventure park, Waterpark">
     <meta name="author" content="Team 43, Laura Blanco, Tejinder Singh
 , M. O'Keeffe, Xose Mendez">
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
-<!-- Code from MOK -->
+<!-- Header, Author MOK -->
 <header class='header'>
     <a class='logo' href="./index.html">
         <div class='logo'>
@@ -45,157 +45,181 @@
             <button class='button-1' type="submit">&#x1F50E;&#xFE0E;</button>
         </form>
         <!-- </search> -->
-        <button type="button" id="login" class='button-1'>Login</button>
+        <a href="./oops.html" id="login" class='button-1'>Login</a>
     </div>
 </header>
 <main>
-<!-- End code from MOK -->
- <!-- Code from Xose Mendez, MOK adding semantic tags -->
-<div class="banner">
-    <div class="card">
-        <h2 class="card-title">Attractions</h2>
-        <p class="card-description">Come join the fun</p>
-        <!-- MOK -->
-        <div class="ticket">
-            <a href='./tickets.html'>Get Tickets Now!</a>
+    <!-- End header -->
+    <!-- Banner, author Xose Mendez, MOK adding semantic tags -->
+    <div class="banner">
+        <div class="card">
+            <hgroup>
+                <h1 class="card-title">Attractions</h1>
+                <p class="card-description">Come join the fun</p>
+            </hgroup>
+            <!-- Buy Tickets, author MOK -->
+            <div class="ticket">
+                <a href='./tickets.html'>Get Tickets Now!</a>
+            </div>
+            <!-- End Buy Tickets -->
         </div>
-        <!-- end MOK -->
     </div>
-</div>
-<!-- End code from Xose Mendez -->
-<!-- Code from Tej, MOK adding screenreader support -->
-<!-- Code from Tej, MOK adding some screenreader support -->
-<nav aria-label="Breadcrumb" class="breadcrumbs">
-    <ol>
-        <li>
-            <a href="./index.html">
-                Home
-            </a>
-        </li>
-        <li class="arrow" aria-hidden="true">
-            >
-        </li>
-        <li>
-            <a href="./visit.html">Plan your trip</a>
-        </li>
-        <li class="arrow" aria-hidden="true">
-            >
-        </li>
-        <li>
-            <a href="./attractions.html">Attractions</a>
-        </li>
-    </ol>
-</nav>
-<!-- End code from Tej -->
-
-<!-- Code from Xose Mendez, MOK adding semantic tags -->
-<section id="carnival-rides" class="card-section"> <!-- MOK adding section, h3-->
-    <div class="section-title"><h2>Carnival Rides</h2></div>
-    <div class="card-align">
-    <div class="card">
-            <img src="./img/chris-richmond-unsplash-op.jpg" alt="Twister Ride in the air">
-            <dl class="card-description">
-                <dt class="card-title">Twister</dt>
-                <dd>Medium Intensity</dd>
-                <dd>Accessible</dd>
-            </dl>
+    <!-- End Banner -->
+    <!-- Breadcrumbs, Author Tej, MOK adding screenreader support -->
+    <nav aria-label="Breadcrumb" class="breadcrumbs">
+        <ol>
+            <li>
+                <a href="./index.html">
+                    Home
+                </a>
+            </li>
+            <li class="arrow" aria-hidden="true">
+                >
+            </li>
+            <li>
+                <a href="./attractions.html">Attractions</a>
+            </li>
+        </ol>
+    </nav>
+    <!-- End Breadcrumbs -->
+    <!-- Card Section, author Xose Mendez, MOK adding semantic tags -->
+    <div id="carnival-rides" class="card-section">
+        <div class="section-title">
+            <h2>Carnival Rides</h2> <!-- MOK adding h2-->
+        </div>
+        <div class="card-align">
+            <!-- Card -->
+            <div class="card">
+                <img src="./img/chris-richmond-unsplash-op.jpg" alt="Twister Ride in the air">
+                <dl class="card-description">
+                    <dt class="card-title">Twister</dt>
+                    <dd>Minimum Height: 110cm</dd>
+                    <dd>Medium Intensity</dd>
+                    <dd>Accessible</dd>
+                </dl>
+            </div>
+            <!-- Card -->
+            <div class="card">
+                <img src="./img/max-harlynking-unsplash-op.jpg" alt="A Ferris Wheel">
+                <dl class="card-description">
+                    <dt class="card-title">Pinwheel</dt>
+                    <dd>Minimum Height: None</dd>
+                    <dd>Low Intensity</dd>
+                    <dd>Accessible</dd>
+                </dl>
+            </div>
+            <!-- Card -->
+            <div class="card">
+                <img src="./img/pat-whelen-unsplash-op.jpg" alt="Spinning ride in the air">
+                <dl class="card-description">
+                    <dt class="card-title">Top Spinner</dt>
+                    <dd>Minimum Height: 110cm</dd>
+                    <dd>High Intensity</dd>
+                    <dd>Accessible</dd>
+                </dl>
+            </div>
+        </div>
     </div>
-    <div class="card">
-            <img src="./img/max-harlynking-unsplash-op.jpg" alt="A Ferris Wheel">
-            <dl class="card-description">
-                <dt class="card-title">Pinwheel</dt>
-                <dd>Low Intensity</dd>
-                <dd>Accessible</dd>
-            </dl>
+    <!-- End Card Section -->
+    <!-- Card Section, author Xose Mendez, MOK adding semantic tags -->
+    <div id="roller-coasters" class="card-section">
+        <div class="section-title">
+            <h2>Roller Coasters</h2> <!-- MOK adding h2-->
+        </div>
+        <div class="card-align">
+            <!-- Card -->
+            <div class="card">
+                <img src="./img/jonny-gios-unsplash-op.jpg" alt="Ninja roller coaster before descent">
+                <dl class="card-description">
+                    <dt class="card-title">Ninja</dt>
+                    <dd>Minimum Height: 130cm</dd>
+                    <dd>High Intensity</dd>
+                    <dd>Top Speed: 89km/h</dd>
+                    <dd>Accessible</dd>
+                </dl>
+            </div>
+            <!-- Card -->
+            <div class="card">
+                <img src="./img/dave-hoefler-unsplash-op.jpg" alt="Grand Mountain car mid turn">
+                <dl class="card-description">
+                    <dt class="card-title">Grand Mountain</dt>
+                    <dd>Minimum Height: 110cm</dd>
+                    <dd>Medium Intensity</dd>
+                    <dd>Top Speed: 47km/h</dd>
+                    <dd>Accessible</dd>
+                </dl>
+            </div>
+            <!-- Card -->
+            <div class="card">
+                <img src="./img/evgeny-klimenchenko-unsplash-op.jpg" alt="Roller coaster car upside down">
+                <dl class="card-description">
+                    <dt class="card-title">Runner</dt>
+                    <dd>Minimum Height: 130cm</dd>
+                    <dd>High Intensity</dd>
+                    <dd>Top Speed: 85km/h</dd>
+                    <dd>Accessible</dd>
+                </dl>
+            </div>
+        </div>
     </div>
-    <div class="card">
-            <img src="./img/pat-whelen-unsplash-op.jpg" alt="Spinning ride in the air">
-            <dl class="card-description">
-                <dt class="card-title">Top Spinner</dt>
-                <dd>High Intensity</dd>
-                <dd>Accessible</dd>
-            </dl>
+    <!-- End Card Section -->
+    <!-- Card Section, author Xose Mendez, MOK adding semantic tags -->
+    <div id="water-rides" class="card-section">
+        <div class="section-title">
+            <h2>Water Rides</h2> <!-- MOK adding h2-->
+        </div>
+        <div class="card-align">
+            <!-- Card -->
+            <div class="card">
+                <img src="./img/jed-villejo-unsplash.jpg" alt="People enjoying a lazy River">
+                <dl class="card-description">
+                    <dt class="card-title">Lazy River</dt>
+                    <dd>Minimum Height: None</dd>
+                    <dd>Low Intensity</dd>
+                    <dd>Accessible</dd>
+                </dl>
+            </div>
+            <!-- Card -->
+            <div class="card">
+                <img src="./img/visit-qatar-1-unsplash.jpg" alt="Person sliding down a large water slide">
+                <dl class="card-description">
+                    <dt class="card-title">Super Slide</dt>
+                    <dd>Minimum Height: 110cm</dd>
+                    <dd>Medium Intensity</dd>
+                    <dd>Accessible</dd>
+                </dl>
+            </div>
+            <!-- Card -->
+            <div class="card">
+                <img src="./img/visit-qatar-2-unsplash.jpg" alt="Large water slide">
+                <dl class="card-description">
+                    <dt class="card-title">Whitewater</dt>
+                    <dd>Minimum Height: 110cm</dd>
+                    <dd>Medium Intensity</dd>
+                    <dd>Not Accessible</dd>
+                </dl>
+            </div>
+        </div>
     </div>
-</div>
-</section>
-<section id="roller-coasters" class="card-section"> <!-- MOK adding section, h3-->
-    <div class="section-title"><h2>Roller Coasters</h2></div>
-    <div class="card-align">
-    <div class="card">
-            <img src="./img/jonny-gios-unsplash-op.jpg" alt="Ninja roller coaster before descent">
-            <dl class="card-description">
-                <dt class="card-title">Ninja</dt>
-                <dd>High Intensity</dd>
-                <dd>Accessible</dd>
-            </dl>
+    <!-- End Card Section -->
+    <!-- Email Signup, Author Laura Blanco -->
+    <div id="emailSignup" class='center'> <!-- MOK adding wrapper div-->
+        <div class="subscribe">
+            <h4>Sign up to get news and discounts!</h4>
+            <p>Get great deals on tickets and stay up to date on park event with our newsletter!</p>
+            <form action="./thanks.html" id="signup">
+                <!-- MOK adding labels -->
+                <label for="signupName" class="screen-reader">Name</label>
+                <input type="text" id="signupName" placeholder="Name" required>
+                <label for="signupEmail" class="screen-reader">Email</label>
+                <input type="email" id="signupEmail" placeholder="Email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </div>
-    <div class="card">
-            <img src="./img/dave-hoefler-unsplash-op.jpg" alt="Grand Mountain car mid turn">
-            <dl class="card-description">
-                <dt class="card-title">Grand Mountain</dt>
-                <dd>Medium Intensity</dd>
-                <dd>Accessible</dd>
-            </dl>
-    </div>
-    <div class="card">
-            <img src="./img/evgeny-klimenchenko-unsplash-op.jpg" alt="Roller coaster car upside down">
-            <dl class="card-description">
-                <dt class="card-title">Runner</dt>
-                <dd>High Intensity</dd>
-                <dd>Accessible</dd>
-            </dl>
-    </div>
-</div>
-</section>
-<section id="water-rides" class="card-section"> <!-- MOK adding section, h3-->
-    <div class="section-title"><h2>Water Rides</h2></div>
-    <div class="card-align">
-    <div class="card">
-            <img src="./img/jed-villejo-unsplash.jpg" alt="People enjoying a lazy River">
-            <dl class="card-description">
-                <dt class="card-title">Lazy River</dt>
-                <dd>Low Intensity</dd>
-                <dd>Accessible</dd>
-            </dl>
-    </div>
-    <div class="card">
-            <img src="./img/visit-qatar-1-unsplash.jpg" alt="Person sliding down a large water slide">
-            <dl class="card-description">
-                <dt class="card-title">Super Slide</dt>
-                <dd>Medium Intensity</dd>
-                <dd>Accessible</dd>
-            </dl>
-    </div>
-    <div class="card">
-            <img src="./img/visit-qatar-2-unsplash.jpg" alt="Large water slide">
-            <dl class="card-description">
-                <dt class="card-title">Whitewater</dt>
-                <dd>High Intensity</dd>
-                <dd>Not Accessible</dd>
-            </dl>
-    </div>
-</div>
-</section>
-<!-- End code from Xose Mendez -->
-<!-- Code from Laura Blanco -->
-<!-- MOK adding section -->
-<section id="emailSignup" class='center'>
-    <!-- end MOK -->
-    <div class="subscribe">
-        <h4>Sign up to get news and discounts!</h4>
-        <p>Get great deals on tickets and stay up to date on park event with our newsletter!</p>
-        <form action="./thanks.html" id="signup">
-            <!-- MOK adding labels -->
-            <label for="signupName" class="screen-reader">Name</label>
-            <input type="text" id="signupName" placeholder="Name" required>
-            <label for="signupEmail" class="screen-reader">Email</label>
-            <input type="email" id="signupEmail" placeholder="Email" required>
-            <button type="submit" >Submit</button>
-        </form>
-    </div>
-</section>
-
+    <!-- End Email Signup -->
 </main>
+<!-- Footer, author Laura Blanco -->
 <footer class="footer">
     <div class="footerGrid">
         <div class='logo'>
@@ -248,7 +272,5 @@
         </div>
     </div>
 </footer>
-<!-- End code by Laura Blanco -->
-
-
+<!-- End footer -->
 </html>

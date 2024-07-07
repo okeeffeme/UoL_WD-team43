@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="The offical website for the Webquest 43 Park">
+    <meta name="description" content="The official  website for the Webquest 43 Park">
     <meta name="keywords" content="Themepark, Roller coasters, Adventure park, Waterpark">
     <meta name="author" content="Team 43, Laura Blanco, Tejinder Singh
 , M. O'Keeffe, Xose Mendez">
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
-<!-- Code from MOK -->
+<!-- Header, Author MOK -->
 <header class='header'>
     <a class='logo' href="./index.html">
         <div class='logo'>
@@ -49,21 +49,23 @@
     </div>
 </header>
 <main>
-    <!-- End code from MOK -->
-    <!-- Code from Xose Mendez, MOK adding semantic tags -->
+    <!-- End header -->
+    <!-- Banner, author Xose Mendez, MOK adding semantic tags -->
     <div class="banner">
         <div class="card">
-            <h2 class="card-title">Plan Your Visit</h2>
-            <p class="card-description">Everything you need to know</p>
-            <!-- MOK -->
+            <hgroup>
+                <h1 class="card-title">Plan Your Visit</h1>
+                <p class="card-description">Everything you need to know</p>
+            </hgroup>
+            <!-- Buy Tickets, author MOK -->
             <div class="ticket">
                 <a href='./tickets.html'>Get Tickets Now!</a>
             </div>
-            <!-- end MOK -->
+            <!-- End Buy Tickets -->
         </div>
     </div>
-    <!-- End code from Xose Mendez -->
-    <!-- Code from Tej, MOK adding screenreader support -->
+    <!-- End Banner -->
+    <!-- Breadcrumbs, Author Tej, MOK adding screenreader support -->
     <nav aria-label="Breadcrumb" class="breadcrumbs">
         <ol>
             <li>
@@ -79,13 +81,13 @@
             </li>
         </ol>
     </nav>
-    <!-- End code from Tej -->
-    <!-- End Code Tej -->
+    <!-- End Breadcrumbs -->
+    <!-- Information, author MOK -->
     <section id="Directions" class="information">
         <div class="section-title">
             <h2>How to Visit Us</h2>
         </div>
-        <!-- Code from Laura -->
+        <!-- Address, author Laura Blanco -->
         <h3>Address</h3>
         <address>
             <p>Camiño Ancho 57</p>
@@ -93,8 +95,8 @@
             <p><a href='mailto:email@email.com'>email@email.com</a></p>
             <p><a href="tel:+0000000000">+00 000 00 000</a></p>
         </address>
-        <!-- End code Laura -->
-        <!-- Code from Tej -->
+        <!-- End Address -->
+        <!-- Details, author Tej -->
         <details>
             <summary>Airport</summary>
             <p><strong>Nearest Airport:</strong> Salamanca Airport</p>
@@ -113,56 +115,65 @@
             <summary>Train</summary>
             <p><strong>Nearest Station:</strong> Sevilla (Plaza de Armas)</p>
         </details>
-        <!-- End code from Tej -->
+        <!-- End details -->
     </section>
-    <!-- Code MOK -->
+    <!-- Map image, author MOK -->
     <img src="./img/citlalli-zyanya-unsplash.png" alt="A 3D rendering of the park">
-    <!-- End code MOK -->
-    <!-- Code from Xose Mendez, MOK adding semantic tags -->
+    <!-- End map -->
+    <!-- Opening hours, author Xose Mendez, MOK adding semantic tags -->
     <div class="opening-hours">
         <h2>Opening Hours</h2>
         <p>Tuesday thru Thursday <time datetime="09:00">9AM</time> to <time datetime="21:00">9PM</time></p>
         <p>Friday, Saturday, Sunday <time datetime="09:00">9AM</time> to <time datetime="00:00">12PM</time></p>
         <p>Closed Monday</p>
     </div>
-    <!-- End code from Xose Mendez -->
-    <!-- Code from Xose Mendez, MOK adding semantic tags -->
-    <section id="accommodations" class="card-section"> <!-- MOK adding section, h3-->
+    <!-- End opening hours -->
+    <!-- Card Section, author Xose Mendez, MOK adding semantic tags -->
+    <div id="accommodations" class="card-section">
         <div class="section-title">
-            <h2>Accommodations</h2>
+            <h2>Accommodations</h2> <!-- MOK adding h2-->
         </div>
         <div class="card-align">
+            <!-- Card -->
             <div class="card card-button">
                 <a class="card-link" href="./tickets.html">
                     <img src="./img/johan-mouchet-unsplash.jpg" alt="Plaza outside Hotel Entredos">
+                <hgroup>
                     <h3 class="card-title">Hotel Entredos</h3>
                     <p class="card-description">25 km from the park</p>
+                </hgroup>
                 </a>
             </div>
+            <!-- Card -->
             <div class="card card-button">
                 <a class="card-link" href="./tickets.html">
                     <img src="./img/nik-lanus-unsplash.jpg" alt="Bed at Hotel Rural Salvatierra">
+                <hgroup>
                     <h3 class="card-title">Hotel Rural Salvatierra</h3>
                     <p class="card-description">7.3 km from the Park</p>
+                </hgroup>
                 </a>
             </div>
+            <!-- Card -->
             <div class="card card-button">
                 <a class="card-link" href="./tickets.html">
                     <img src="./img/rhema-kallianpur-unsplash.jpg" alt="Bed at Villa de Salvatierra">
+                    <hgroup>
                     <h3 class="card-title">Villa de Salvatierra</h3>
                     <p class="card-description">7.3 km from the Park</p>
+                </hgroup>
                 </a>
             </div>
         </div>
-    </section>
-    <!-- End code from Xose Mendez -->
-
+    </div>
+    <!-- End Card Section -->
+    <!-- Information, author MOK -->
     <section id="FAQ" class="information">
         <div class="section-title">
             <h2>Park Information</h2>
         </div>
         <h3>Services</h3>
-        <!-- Code from Tej -->
+        <!-- Details, author Tej -->
         <details>
             <summary>Accessibilty Access</summary>
             <ul>
@@ -204,9 +215,9 @@
                 <li>Other animals upon request</li>
             </ul>
         </details>
-        <!-- End code from Tej -->
+        <!-- End details -->
         <h3>Inside the Park</h3>
-        <!-- Code from Tej -->
+        <!-- Details, author Tej -->
         <details>
             <summary>Information Points</summary>
             <p>There are several information points across the park, as noted in the park map. Information is also
@@ -233,16 +244,17 @@
             <p><strong>Contact:</strong> <a href="tel:+0000000000">+00 000 00 000</a> | <a
                     href='mailto:email@email.com'>email@email.com</a></p>
         </details>
-        <!-- End code from Tej -->
+        <!-- End details -->
     </section>
-    <!-- Code from Xose Mendez, MOK adding semantic tags -->
-    <section id="attractions" class="card-section"> <!-- MOK adding section, h3-->
+    <!-- Card Section, author Xose Mendez, MOK adding semantic tags -->
+    <div id="attractions" class="card-section">
         <div class="section-title">
-            <h2>Attractions</h2>
+            <h2>Attractions</h2> <!-- MOK adding h2-->
         </div>
         <div class="card-align">
+            <!-- Card -->
             <div class="card card-button">
-                <a class="card-link" href="./attractions.html">
+                <a class="card-link" href="./attractions.html#carnival-rides">
                     <img src="./img/chris-richmond-unsplash-op.jpg" alt="Twister Ride in the air">
                     <dl class="card-description">
                         <dt class="card-title">Twister</dt>
@@ -251,8 +263,9 @@
                     </dl>
                 </a>
             </div>
+            <!-- Card -->
             <div class="card card-button">
-                <a class="card-link" href="./attractions.html">
+                <a class="card-link" href="./attractions.html#roller-coasters">
                     <img src="./img/jonny-gios-unsplash-op.jpg" alt="Ninja roller coaster before descent">
                     <dl class="card-description">
                         <dt class="card-title">Ninja</dt>
@@ -261,8 +274,9 @@
                     </dl>
                 </a>
             </div>
+            <!-- Card -->
             <div class="card card-button">
-                <a class="card-link" href="./attractions.html">
+                <a class="card-link" href="./attractions.html#water-rides">
                     <img src="./img/visit-qatar-2-unsplash.jpg" alt="Large water slide">
                     <dl class="card-description">
                         <dt class="card-title">Whitewater</dt>
@@ -272,66 +286,85 @@
                 </a>
             </div>
         </div>
-    </section>
-    <!-- End code from Xose Mendez -->
-    <section id="events" class="card-section"> <!-- MOK adding section, h3-->
+    </div>
+    <!-- End Card Section -->
+    <!-- Card Section, author Xose Mendez, MOK adding semantic tags -->
+    <div id="events" class="card-section">
         <div class="section-title">
-            <h2>Events</h2>
+            <h2>Events</h2> <!-- MOK adding h2-->
         </div>
         <div class="card-align">
+            <!-- Card -->
             <div class="card card-button">
                 <a class="card-link" href="./tickets.html">
                     <img src="./img/matthew-ball-unsplash.jpg" alt="A birthday party at the park">
-                    <h3 class="card-title">20 Year Celebration</h3>
-                    <p class="card-description">Celebrate Our Birthday</p>
+                    <hgroup>
+                        <h3 class="card-title">20 Year Celebration</h3>
+                        <p class="card-description">Celebrate Our Birthday</p>
+                    </hgroup>
                 </a>
             </div>
+            <!-- Card -->
             <div class="card card-button">
                 <a class="card-link" href="./tickets.html">
                     <img src="./img/kenny-eliason-unsplash.jpg" alt="Halloween at the park">
-                    <h3 class="card-title">Holiday Events</h3>
-                    <p class="card-description">See Upcoming Festivities</p>
+                    <hgroup>
+                        <h3 class="card-title">Holiday Events</h3>
+                        <p class="card-description">See Upcoming Festivities</p>
+                    </hgroup>
                 </a>
             </div>
+            <!-- Card -->
             <div class="card card-button">
                 <a class="card-link" href="./tickets.html">
                     <img src="./img/jed-villejo-unsplash.jpg" alt="Water ride with people having fun">
-                    <h3 class="card-title">Water Park Opening</h3>
-                    <p class="card-description">Time to Splash</p>
+                    <hgroup>
+                        <h3 class="card-title">Water Park Opening</h3>
+                        <p class="card-description">Time to Splash</p>
+                    </hgroup>
                 </a>
             </div>
         </div>
-    </section>
-    <section id="tickets" class="card-section"> <!-- MOK adding section, h3-->
+    </div>
+    <!-- End Card Section -->
+    <!-- Card Section, author Xose Mendez, MOK adding semantic tags -->
+    <div id="tickets" class="card-section">
         <div class="section-title">
-            <h2>Tickets</h2>
+            <h2>Tickets</h2> <!-- MOK adding h2-->
         </div>
         <div class="card-align">
+            <!-- Card -->
             <div class="card card-button">
                 <a class="card-link" href="./tickets.html">
-                    <h3 class="card-title">Single Tickets</h3>
-                    <p class="card-description">Individual Experiences</p>
+                    <hgroup>
+                        <h3 class="card-title">Single Tickets</h3>
+                        <p class="card-description">Individual Experiences</p>
+                    </hgroup>
                 </a>
             </div>
+            <!-- Card -->
             <div class="card card-button">
                 <a class="card-link" href="./tickets.html">
-                    <h3 class="card-title">Group Tickets</h3>
-                    <p class="card-description">Families, Teams, and Friends</p>
+                    <hgroup>
+                        <h3 class="card-title">Group Tickets</h3>
+                        <p class="card-description">Families, Teams, and Friends</p>
+                    </hgroup>
                 </a>
             </div>
+            <!-- Card -->
             <div class="card card-button">
                 <a class="card-link" href="./tickets.html">
-                    <h3 class="card-title">Hotel & Ticket Packages</h3>
-                    <p class="card-description">Bundle Up the Best Value</p>
+                    <hgroup>
+                        <h3 class="card-title">Hotel & Ticket Packages</h3>
+                        <p class="card-description">Bundle Up the Best Value</p>
+                    </hgroup>
                 </a>
             </div>
         </div>
-    </section>
-    <!-- End code from Xose Mendez -->
-    <!-- Code from Laura Blanco -->
-    <!-- MOK adding section -->
-    <section id="emailSignup" class='center'>
-        <!-- end MOK -->
+    </div>
+    <!-- End Card Section -->
+    <!-- Email Signup, author Laura Blanco -->
+    <div id="emailSignup" class='center'> <!-- MOK adding wrapper div -->
         <div class="subscribe">
             <h4>Sign up to get news and discounts!</h4>
             <p>Get great deals on tickets and stay up to date on park event with our newsletter!</p>
@@ -344,9 +377,9 @@
                 <button type="submit">Submit</button>
             </form>
         </div>
-    </section>
-
+    </div>
 </main>
+<!-- Footer, author Laura Blanco -->
 <footer class="footer">
     <div class="footerGrid">
         <div class='logo'>
@@ -399,6 +432,5 @@
         </div>
     </div>
 </footer>
-<!-- End code by Laura Blanco -->
-
+<!-- End footer -->
 </html>
